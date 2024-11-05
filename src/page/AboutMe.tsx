@@ -7,7 +7,7 @@ import { GrNext } from "react-icons/gr";
 import parse from "html-react-parser";
 
 export default function AboutMe() {
-  const [content, setContent] = useState<any>(`<div className="judul">
+  const [content, setContent] = useState(`<div className="judul">
               <h1 className="font-semibold text-lg lg:font-bold lg:text-4xl lg:mb-2">
                 A natural builders
               </h1>
