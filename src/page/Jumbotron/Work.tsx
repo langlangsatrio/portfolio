@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 import Services from "../Services";
 import { FaBehanceSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { HiOutlineArrowLongLeft } from "react-icons/hi2";
+import Link from "next/link";
 
 export default function Work() {
   const workPortfolio = [
@@ -63,31 +65,44 @@ export default function Work() {
   ];
 
   return (
-    <div className="flex flex-col gap-2 px-2 py-28 justify-center items-center mt-24 bg-black">
+    <div className="flex flex-col gap-2 pt-16 px-3 lg:px-2 lg:py-28 lg:justify-center items-center lg:mt-24 bg-black">
       <Services />
-      <h1 className="lg:font-bold lg:text-4xl mb-2 text-white">Recent Work</h1>
-      <p className="text-gray-400 mb-5 text-lg">
+      <h1 className="font-semibold text-xl lg:font-bold lg:text-4xl mb-2 text-white">
+        Recent Work
+      </h1>
+      <p className="text-gray-400 text-sm text-center mb-5 px-7 lg:mb-5 lg:text-lg">
         Some of my recent works. Each case is unique. See case study for
         references.
       </p>
       <div className="flex gap-5">
-        <FaBehanceSquare color="gray" size={27} />
-        <FaGithub color="gray" size={27} />
+        <Link href={"https://www.behance.net/satriolanglang"}>
+          <FaBehanceSquare color="gray" size={27} />
+        </Link>
+        <Link href={"https://github.com/langlangsatrio"}>
+          <FaGithub color="gray" size={27} />
+        </Link>
       </div>
-      <div className="flex justify-center">
-        <Carousel className="max-w-7xl max-h-full ">
-          <CarouselContent className="-ml-1">
+      <div className="flex justify-center items-center gap-3 mt-10  -mb-5 lg:hidden w-full h-full">
+        <HiOutlineArrowLongLeft color="white" />
+        <p className="text-sm text-white">Swipe left to see more projects</p>
+      </div>
+      <div className="flex justify-center w-screen mt-10 mb-20 lg:mb-0 lg:my-0">
+        <Carousel className="w-screen max-w-7xl max-h-full">
+          <CarouselContent className="lg:-ml-1">
             {workPortfolio.map((value, index) => {
               return (
-                <CarouselItem key={index} className="basis-1/3 py-20">
-                  <div>
-                    <Card className="lg:pl-2 bg-gray-200 border border-white shadow-md shadow-white">
+                <CarouselItem
+                  key={index}
+                  className="w-full place-items-center lg:w-fit basis-1/1 lg:basis-1/3 lg:py-20 "
+                >
+                  <div className="">
+                    <Card className="lg:ml-0 lg:pl-2 bg-gray-200 border border-white shadow-md shadow-white  w-72 lg:w-96">
                       <CardHeader>
                         <CardTitle>
-                          <div className="font-semibold mb-2 text-xl">
+                          <div className="font-semibold mb-1 lg:mb-2 text-xl lg:text-2xl">
                             {value.name}
                           </div>
-                          <div className="font-medium text-small mb-1">
+                          <div className="font-medium text-xs lg:text-base lg:mb-1">
                             {value.type}
                           </div>
                         </CardTitle>
@@ -95,10 +110,10 @@ export default function Work() {
                       <CardContent>
                         <img
                           src={value.url}
-                          className="mb-7 rounded-md w-full h-full bg-gray-300 shadow-md"
+                          className="rounded-md w-full h-full mb-5 lg:mb-7 lg:w-full lg:h-full bg-gray-300 shadow-md"
                           alt="Photo of Projects"
                         />
-                        <div className="font-medium text-small">
+                        <div className="text-xs lg:font-medium lg:text-base">
                           {value.description}
                         </div>
                       </CardContent>
@@ -119,8 +134,10 @@ export default function Work() {
               );
             })}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="hidden lg:block">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
         </Carousel>
       </div>
     </div>

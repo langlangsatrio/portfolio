@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar/Navbar";
+import AboutMe from "@/page/AboutMe";
 import ContactForm from "@/page/contactForm";
 import Footer from "@/page/Footer";
 import Jumbotron from "@/page/Jumbotron/Jumbotron";
@@ -12,6 +13,7 @@ export default function Home() {
       <Jumbotron />
       <Solution />
       <Work />
+      <AboutMe />
       <ContactForm />
       <Footer />
     </div>
