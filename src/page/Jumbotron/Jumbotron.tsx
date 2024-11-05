@@ -19,7 +19,7 @@ export default function Jumbotron() {
         <div className="lg:flex lg:flex-col lg:gap-8 lg:justify-center lg:items-start">
           <div className="border border-black lg:py-2 lg:px-4 rounded-3xl w-fit h-fit">
             <h3 className="text-base lg:font-semibold">
-              Hi, I'm Satrio, Founder of MVP Factory Indonesia
+              Hi, I'm Satrio, Founder of Startup Powerhouse
             </h3>
           </div>
           <h1 className="lg:font-bold lg:text-6xl lg:leading-tight">

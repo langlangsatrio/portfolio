@@ -61,7 +61,7 @@ export default function Services() {
         <div className="flex gap-3 justify-center my-3">
           {service.map((value, item) => {
             return (
-              <div>
+              <div key={item}>
                 <Badge
                   key={item}
                   variant={"outline"}
@@ -76,7 +76,7 @@ export default function Services() {
         <div className="flex gap-3 justify-center my-3">
           {techStack.map((value, item) => {
             return (
-              <div>
+              <div key={item}>
                 <Badge
                   key={item}
                   variant={"outline"}
