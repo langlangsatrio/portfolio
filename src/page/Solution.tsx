@@ -13,10 +13,10 @@ export default function Solution() {
             needs..
           </h1>
           <p className="lg:text-gray-400 lg:text-lg text-center">
-            I'm a full-stack engineer with professional experience in sales,
-            marketing and brand design. <br />
-            I'm able to scale your products and bringing more sales. Proficient
-            in seeing market demands.
+            I&apos;m a full-stack engineer with professional experience in
+            sales, marketing and brand design. <br />
+            I&apos;m able to scale your products and bringing more sales.
+            Proficient in seeing market demands.
           </p>
         </div>
         <div className="lg:flex lg:justify-center lg:items-center lg:gap-64">
@@ -32,7 +32,7 @@ export default function Solution() {
             <div className="lg:text-center">
               <p className="text-gray-500">
                 Hiring a software engineers could be expensive nowadays, not to
-                mention if they don't have startup environment knowledge.
+                mention if they don&apos;t have startup environment knowledge.
               </p>
               <br className="border border-gray-500 w-full h-1" />
               <p className="text-black font-semibold">
@@ -53,7 +53,7 @@ export default function Solution() {
             <div className="lg:text-center">
               <p className="text-gray-500">
                 Developing a product could takes long times, from months to
-                years. This happened because your hire can't interpret the
+                years. This happened because your hire can&apos;t interpret the
                 demands.
               </p>
               <br className="border border-gray-500 w-full" />
@@ -73,13 +73,13 @@ export default function Solution() {
             </div>
             <div className="lg:text-center">
               <p className="text-gray-500">
-                Don't let your ideas be limited by the tech of the product. You
-                name it, I ship it. Any stack and technology. Set your ideas
+                Don&apos;t let your ideas be limited by the tech of the product.
+                You name it, I ship it. Any stack and technology. Set your ideas
                 free.
               </p>
               <br className="border border-gray-500 w-full h-1" />
               <p className="text-black font-semibold">
-                I'm a full stack developer. I ship anything with any stack.
+                I&apos;m a full stack developer. I ship anything with any stack.
               </p>
             </div>
           </div>

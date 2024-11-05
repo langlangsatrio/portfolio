@@ -8,9 +8,6 @@ import { FaYCombinator } from "react-icons/fa";
 import { SiGeeksforgeeks } from "react-icons/si";
 import { FcBbc } from "react-icons/fc";
 import { MdMessage } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { Badge } from "@/components/ui/badge";
 
 export default function Jumbotron() {
   return (
@@ -19,11 +16,11 @@ export default function Jumbotron() {
         <div className="lg:flex lg:flex-col lg:gap-8 lg:justify-center lg:items-start">
           <div className="border border-black lg:py-2 lg:px-4 rounded-3xl w-fit h-fit">
             <h3 className="text-base lg:font-semibold">
-              Hi, I'm Satrio, Founder of Startup Powerhouse
+              Hi, I&apos;m Satrio, Founder of Startup Powerhouse
             </h3>
           </div>
           <h1 className="lg:font-bold lg:text-6xl lg:leading-tight">
-            I'm a Software Developer and Tech-Entrepreneur based in Asia
+            I&apos;m a Software Developer and Tech-Entrepreneur based in Asia
           </h1>
           <p className="lg:text-xl lg:leading-9 text-gray-700">
             A full-stack engineer, founder, product builder, and
@@ -51,7 +48,11 @@ export default function Jumbotron() {
           </div>
         </div>
         <div className="lg:flex-col borde w-full h-full">
-          <img src="./main-photo.jpeg" className="rounded-2xl" />
+          <img
+            src="./main-photo.jpeg"
+            className="rounded-2xl"
+            alt="Photo of Satrio"
+          />
         </div>
       </div>
 

@@ -5,8 +5,6 @@ import { Button } from "../ui/button";
 import {
   NavigationMenu,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
   NavigationMenuLink,
   NavigationMenuItem,
 } from "../ui/navigation-menu";

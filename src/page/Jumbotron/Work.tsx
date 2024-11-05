@@ -17,7 +17,7 @@ import { FaBehanceSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 export default function Work() {
-  const workPortfolio: any[] = [
+  const workPortfolio = [
     {
       name: "EternaGPT",
       type: "MVP for Bootstraped Startup",
@@ -96,6 +96,7 @@ export default function Work() {
                         <img
                           src={value.url}
                           className="mb-7 rounded-md w-full h-full bg-gray-300 shadow-md"
+                          alt="Photo of Projects"
                         />
                         <div className="font-medium text-small">
                           {value.description}
