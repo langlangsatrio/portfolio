@@ -21,29 +21,31 @@ export default function Navbar() {
             <GiHamburgerMenu />
           </div>
           <div className="w-fit h-fit">
-            <h1 className="lg:text-lg lg:font-bold">SATRIO</h1>
+            <h1 className="lg:text-lg lg:font-bold">
+              <a href="/">SATRIO</a>
+            </h1>
           </div>
         </div>
         <div className="hidden md:flex">
           <NavigationMenu>
             <NavigationMenuList className="flex gap-20">
               <NavigationMenuItem>
-                <Link href="#service" legacyBehavior passHref>
+                <Link href="/#service" legacyBehavior passHref>
                   <NavigationMenuLink>Service</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="#work" legacyBehavior passHref>
+                <Link href="/#work" legacyBehavior passHref>
                   <NavigationMenuLink>Portfolio</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="#about" legacyBehavior passHref>
+                <Link href="/#about" legacyBehavior passHref>
                   <NavigationMenuLink>About</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="#contact" legacyBehavior passHref>
+                <Link href="/#contact" legacyBehavior passHref>
                   <NavigationMenuLink>Contact</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
